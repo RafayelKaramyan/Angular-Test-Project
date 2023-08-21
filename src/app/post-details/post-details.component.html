@@ -1,0 +1,6 @@
+<h2>Post Details</h2>
+<div *ngIf="post">
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.body }}</p>
+  <button mat-raised-button color="primary" routerLink="/posts">Back to Posts</button>
+</div>
