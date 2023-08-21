@@ -8,7 +8,7 @@ import { ApiService } from '../api.service';
   // styleUrls: ['./post-details.component.css']
 })
 export class PostDetailsComponent implements OnInit {
-  postId: number | null = null; // Объявляем postId как number или null
+  postId: number | null = null;
   post: any;
 
   constructor(private route: ActivatedRoute, private apiService: ApiService) { }

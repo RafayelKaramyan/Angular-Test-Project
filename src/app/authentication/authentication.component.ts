@@ -21,17 +21,11 @@ export class AuthenticationComponent implements OnInit {
   }
 
   onSubmit() {
-    // Получите значения логина и пароля из формы
     const username = this.loginForm.value.username;
     const password = this.loginForm.value.password;
-
-    // Здесь вы можете добавить логику для отправки логина и пароля на сервер
-    // и выполнения проверки аутентификации. Например:
     if (username === 'ваш_логин' && password === 'ваш_пароль') {
-      // В случае успешной аутентификации перенаправьте пользователя на другую страницу
-      this.router.navigate(['/posts']); // Здесь '/posts' - это путь к странице постов
+      this.router.navigate(['/posts']);
     } else {
-      // В случае неверных учетных данных можно вывести сообщение об ошибке
       console.log('Неверные учетные данные');
     }
   }

@@ -25,7 +25,7 @@ import { PostDetailsComponent } from './post-details/post-details.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatFormFieldModule // Добавьте этот модуль
+    MatFormFieldModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
